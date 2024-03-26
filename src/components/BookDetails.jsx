@@ -10,6 +10,8 @@ const BookDetails = () => {
 //   const [read, setRead] = useState(true);
   const [toastContainer, setToastContainer] = useState([]);
 
+  // console.log(listBooks);
+
   const notifyMe = () => {
         listedBooksId(bookId);
         if(!toastContainer.includes('read')){
