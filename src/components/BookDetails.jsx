@@ -13,6 +13,8 @@ const BookDetails = () => {
   const notifyMe = () => {
         listedBooksId(bookId);
         if(!toastContainer.includes('read')){
+          const listBook = [...listBooks, bookDetails];
+          setListBooks(listBook);
             toast('Read is marked!!');
             const readToast = [...toastContainer, 'read'];
             setToastContainer(readToast);

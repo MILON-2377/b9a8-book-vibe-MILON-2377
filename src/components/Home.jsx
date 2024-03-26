@@ -3,12 +3,12 @@ import Books from "./Books";
 
 
 const Home = () => {
-    const books = useLoaderData();
+    const booksList = useLoaderData();
     // console.log(books);
     return (
         <div className="grid grid-cols-3 gap-5">
             {
-                books.map(book => <Books key={book.id} book={book}></Books>)
+                booksList.map(book => <Books key={book.bookName} book={book}></Books>)
             }
         </div>
     );

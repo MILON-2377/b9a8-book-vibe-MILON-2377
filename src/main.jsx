@@ -10,6 +10,10 @@ import Home from './components/Home.jsx';
 import ListBooks from './components/ListBooks.jsx';
 import PagesRead from './components/PagesRead.jsx';
 import BookDetails from './components/BookDetails.jsx';
+import ReadBook from './components/ReadBook.jsx';
+import WishListBooks from './components/WishListBooks.jsx';
+// import Error from './ErrorPage/Error.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +27,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/listedbooks',
-        element: <ListBooks></ListBooks>
+        element: <ListBooks></ListBooks>,
+        children: [
+          {
+            path: '/listedbooks/readbooks',
+            element: <ReadBook></ReadBook>
+          },
+          {
+            path:'/listedbooks/wishlistbooks',
+            element: <WishListBooks></WishListBooks>
+          }
+        ]
       },
       {
         path: '/pagesread',
