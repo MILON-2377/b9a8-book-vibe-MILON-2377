@@ -7,9 +7,9 @@ import Wish from "./Wish";
 const WishListBooks = () => {
     const {listBooks} = useContext(listedBooksToWishList);
     return (
-        <div className="flex flex-col items-center justify-center gap-5">
+        <div className="flex flex-col items-center justify-center mt-4 gap-5">
             {
-                listBooks.map(book => <Wish key={book.id} book={book}></Wish>)
+                listBooks.map(bookset => <Wish key={bookset.id} bookset={bookset}></Wish>)
             }
         </div>
     );

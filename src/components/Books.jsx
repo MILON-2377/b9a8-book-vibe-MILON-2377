@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { useContext } from "react";
-import { bookDetailsContext } from "../Root/Root";
+import { listedBooksToWishList } from "../Root/Root";
 
-const Books = ({ book }) => {
+
+const Books = ({ bookSingle }) => {
 //   console.log(book);
-    const {setBookDetails} = useContext(bookDetailsContext);
-    const {bookId, tags, image, bookName, rating, author, category } = book;
+    const {setBookDetails} = useContext(listedBooksToWishList);
+    const {bookId, tags, image, bookName, rating, author, category } = bookSingle;
 
   return (
-    <Link onClick={() => setBookDetails(book)} to={`/${bookId}`}>
+    <Link onClick={() => setBookDetails(bookSingle)} to={`/${bookId}`}>
       <div className="card h-[650px] p-4 bg-base-100 shadow-xl">
         <figure>
           <img

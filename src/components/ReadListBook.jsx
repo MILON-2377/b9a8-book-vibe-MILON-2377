@@ -1,22 +1,23 @@
 import { CiLocationOn } from "react-icons/ci";
 import { FaUserFriends } from "react-icons/fa";
 import { MdOutlineContactPage } from "react-icons/md";
+import PropTypes from 'prop-types';
 
 const ReadListBook = ({ listbook }) => {
-  console.log(listbook);
+  // console.log(listbook);
   const {
     author,
     bookName,
     category,
     image,
-    publisher,
+   
     rating,
-    review,
+    
     tags,
     totalPages
   } = listbook;
   return (
-    <div className="card h-[250px] w-[80%] card-side border p-4 bg-base-100 shadow-xl">
+    <div className="card lg:h-[250px] w-[80%] card-side border p-4 bg-base-100 shadow-xl">
       <figure>
         <img className="w-[400px]"
           src={image}
@@ -63,4 +64,7 @@ const ReadListBook = ({ listbook }) => {
   );
 };
 
+ReadListBook.propTypes = {
+  listbook: PropTypes.array.isRequired
+}
 export default ReadListBook;

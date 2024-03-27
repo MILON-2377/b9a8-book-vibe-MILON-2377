@@ -2,7 +2,7 @@
 import { CiLocationOn } from "react-icons/ci";
 
 const ListBook = ({ book }) => {
-    console.log(book);
+    // console.log(book);
     const {image, bookName, author, tags, category, publisher, rating, review, totalPages, yearOfPublishing} = book;
     return (
       <div className="card flex card-side bg-base-100 shadow-xl">

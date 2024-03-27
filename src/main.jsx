@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Root from './Root/Root.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Root from './Root/Root.jsx';
 import Home from './components/Home.jsx';
 import ListBooks from './components/ListBooks.jsx';
 import PagesRead from './components/PagesRead.jsx';

@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {2
+const Nav = () => {
 
     const navbarLists = <>
-        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-medium hover:bg-slate-100 rounded-md text-green-500 border border-green-400' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-medium'  } to='/'>Home</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-medium hover:bg-slate-100 rounded-md text-green-500 border border-green-400' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-medium'  } to='/listedbooks'>Listed Books</NavLink>
-        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-medium hover:bg-slate-100 rounded-md text-green-500 border border-green-400' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-medium'  } to='/pagesread'>Pages to Read</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-semibold hover:bg-slate-100 rounded-md text-[#23BE0A] border border-[#23BE0A]' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-normal text-[#131313CC]'  } to='/'>Home</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-semibold hover:bg-slate-100 rounded-md text-[#23BE0A] border border-[#23BE0A]' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-normal text-[#131313CC]'  } to='/listedbooks'>Listed Books</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'px-4 py-3 text-xl font-semibold hover:bg-slate-100 rounded-md text-[#23BE0A] border border-[#23BE0A]' : 'px-4 py-3 hover:bg-gray-100 rounded-md text-xl font-normal text-[#131313CC]'  } to='/pagesread'>Pages to Read</NavLink>
     </>
 
   return (
@@ -37,7 +37,7 @@ const Nav = () => {2
             }
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+          <p className="btn btn-ghost lg:block hidden text-xl lg:text-3xl font-bold text-black">Read Free Time</p>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -46,8 +46,13 @@ const Nav = () => {2
           }
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end lg:flex hidden mr-3 gap-5">
+        <button className="btn text-xl font-semibold bg-[#23BE0A] text-white">Sign In</button>
+        <button className="btn text-xl font-semibold bg-[#59C6D2] text-white">Sign Up</button>
+      </div>
+
+      <div className=" lg:hidden block navbar-end">
+        <h2 className="text-2xl font-medium mr-4 text-[#23BE0A]">Read Free Time</h2>
       </div>
     </div>
   );

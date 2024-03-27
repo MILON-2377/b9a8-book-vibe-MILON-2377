@@ -3,7 +3,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { MdOutlineContactPage } from "react-icons/md";
 
 
-const Wish = ({ book }) => {
+const Wish = ({ bookset }) => {
   const {
     author,
     bookName,
@@ -14,7 +14,7 @@ const Wish = ({ book }) => {
     review,
     tags,
     totalPages,
-  } = book;
+  } = bookset;
   return (
     <div className="card h-[250px] w-[80%] card-side border p-4 bg-base-100 shadow-xl">
       <figure>
