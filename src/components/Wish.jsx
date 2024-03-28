@@ -18,7 +18,7 @@ const Wish = ({ bookset }) => {
   return (
     <div className="card w-full h-[650px] flex lg:flex-row flex-col lg:h-[250px] lg:w-[80%] card-side border lg:p-4 bg-base-100 shadow-xl">
       <div className="w-[98%] p-3">
-        <img className="lg:w-[400px] rounded-lg w-full" src={image} />
+        <img className="lg:w-[400px] lg:h-full rounded-lg w-full" src={image} />
       </div>
 
       <div className="card-body p-3 pl-5">
