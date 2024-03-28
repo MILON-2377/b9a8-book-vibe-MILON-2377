@@ -46,12 +46,12 @@ const Nav = () => {
           }
         </ul>
       </div>
-      <div className="navbar-end lg:flex hidden mr-3 gap-5">
+      <div className="navbar-end lg:flex hidden lg:mr-3 gap-5">
         <button className="btn text-xl font-semibold bg-[#23BE0A] text-white">Sign In</button>
         <button className="btn text-xl font-semibold bg-[#59C6D2] text-white">Sign Up</button>
       </div>
 
-      <div className=" lg:hidden block navbar-end">
+      <div className=" lg:hidden flex navbar-end">
         <h2 className="text-2xl font-medium mr-4 text-[#23BE0A]">Read Free Time</h2>
       </div>
     </div>

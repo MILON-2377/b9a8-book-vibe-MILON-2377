@@ -5,7 +5,7 @@ const ListBook = ({ book }) => {
     // console.log(book);
     const {image, bookName, author, tags, category, publisher, rating, review, totalPages, yearOfPublishing} = book;
     return (
-      <div className="card flex card-side bg-base-100 shadow-xl">
+      <div className="card card-side bg-base-100 shadow-xl">
         <figure>
           <img
             src={image}
